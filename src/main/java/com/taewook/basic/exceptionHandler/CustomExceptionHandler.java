@@ -1,4 +1,4 @@
-package com.example.basic.exceptionHandler;
+package com.taewook.basic.exceptionHandler;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

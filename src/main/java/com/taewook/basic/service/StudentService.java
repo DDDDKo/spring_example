@@ -1,9 +1,9 @@
-package com.example.basic.service;
+package com.taewook.basic.service;
 
 import org.springframework.http.ResponseEntity;
 
-import com.example.basic.dto.Request.Student.PatchStudentRequestDto;
-import com.example.basic.dto.Request.Student.PostStudentRequestDto;
+import com.taewook.basic.dto.Request.Student.PatchStudentRequestDto;
+import com.taewook.basic.dto.Request.Student.PostStudentRequestDto;
 
 public interface StudentService {
     ResponseEntity<String> postStudent(PostStudentRequestDto dto);

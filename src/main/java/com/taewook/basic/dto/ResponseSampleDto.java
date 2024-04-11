@@ -1,4 +1,4 @@
-package com.example.basic.dto;
+package com.taewook.basic.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

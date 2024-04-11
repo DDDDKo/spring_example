@@ -1,14 +1,14 @@
-package com.example.basic.service.implement;
+package com.taewook.basic.service.implement;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.example.basic.dto.Request.Student.PatchStudentRequestDto;
-import com.example.basic.dto.Request.Student.PostStudentRequestDto;
-import com.example.basic.entity.StudentEntity;
-import com.example.basic.repository.StudentRepository;
-import com.example.basic.service.StudentService;
+import com.taewook.basic.dto.Request.Student.PatchStudentRequestDto;
+import com.taewook.basic.dto.Request.Student.PostStudentRequestDto;
+import com.taewook.basic.entity.StudentEntity;
+import com.taewook.basic.repository.StudentRepository;
+import com.taewook.basic.service.StudentService;
 
 import lombok.RequiredArgsConstructor;
 

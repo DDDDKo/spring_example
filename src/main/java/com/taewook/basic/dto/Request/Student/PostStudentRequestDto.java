@@ -1,4 +1,4 @@
-package com.example.basic.dto.Request.Student;
+package com.taewook.basic.dto.Request.Student;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

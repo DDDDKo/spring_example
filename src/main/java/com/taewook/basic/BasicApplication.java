@@ -1,4 +1,4 @@
-package com.example.basic;
+package com.taewook.basic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

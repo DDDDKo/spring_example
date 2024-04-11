@@ -1,4 +1,4 @@
-package com.example.basic.controller;
+package com.taewook.basic.controller;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.dto.SampleDto;
+import com.taewook.basic.dto.SampleDto;
 
 import jakarta.validation.Valid;
 

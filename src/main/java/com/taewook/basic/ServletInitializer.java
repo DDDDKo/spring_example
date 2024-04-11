@@ -1,4 +1,4 @@
-package com.example.basic;
+package com.taewook.basic;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

@@ -1,4 +1,4 @@
-package com.example.basic.repository;
+package com.taewook.basic.repository;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.example.basic.entity.StudentEntity;
+import com.taewook.basic.entity.StudentEntity;
 
 // Repository 레이어 : 
 // - 데이터베이스와 관련된 작업들을 처리하는 영역

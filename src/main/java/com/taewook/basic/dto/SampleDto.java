@@ -1,4 +1,4 @@
-package com.example.basic.dto;
+package com.taewook.basic.dto;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;

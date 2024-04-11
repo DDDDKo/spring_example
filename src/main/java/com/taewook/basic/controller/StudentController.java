@@ -1,4 +1,4 @@
-package com.example.basic.controller;
+package com.taewook.basic.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.dto.Request.Student.PatchStudentRequestDto;
-import com.example.basic.dto.Request.Student.PostStudentRequestDto;
-import com.example.basic.service.StudentService;
+import com.taewook.basic.dto.Request.Student.PatchStudentRequestDto;
+import com.taewook.basic.dto.Request.Student.PostStudentRequestDto;
+import com.taewook.basic.service.StudentService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,6 @@
-package com.example.basic.entity;
+package com.taewook.basic.entity;
 
-import com.example.basic.dto.Request.Student.PostStudentRequestDto;
+import com.taewook.basic.dto.Request.Student.PostStudentRequestDto;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

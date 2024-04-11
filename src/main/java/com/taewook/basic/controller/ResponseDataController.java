@@ -1,4 +1,4 @@
-package com.example.basic.controller;
+package com.taewook.basic.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.dto.ResponseSampleDto;
+import com.taewook.basic.dto.ResponseSampleDto;
 
 @RestController  // json형태로 반환받기 위한 어노테이션
 
