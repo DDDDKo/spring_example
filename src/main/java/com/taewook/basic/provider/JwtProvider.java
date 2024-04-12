@@ -25,8 +25,24 @@ import java.security.Key;
 @Component
 public class JwtProvider {
 
+    // JWT 암호화에 사용되는 비밀키는 보안 관리가 되어야 함
+    // 그렇기 때문에 코드에 직접적으러 비밀키를 작성하는 것은 보안상 좋지 않음
+    // 해결책
+    // 1. application.properties / application.yaml 에 등록
+    // - application.properties 혹은 application.yaml에 비밀키를 작성
+    // - @Value()를 이용하여 데이터를 가져옴
+    // - 주의사항 : application.properties / application.yaml을 gitignore에 등록해야함
     @Value("${jwt.secret-key}")
     private String secretKey;
+
+    // 2. 시스템의 환경변수로 등록하여 사용
+    // - OS 자체의 시스템 환경 변수에 비밀키를 작성
+    // - Spring에서 Environment 객체를 이용하여 값을 가져옴
+
+    // 3. 외부 데이터 관리 도구를 사용
+    // - 해당 서버가 아닌 타 서버에 등록된 Vault 도구를 사용하여 비밀키를 관리
+    // - OS 부팅시에 Vault 서버에 접근하여 비밀키를 가져와서 사용하는 방법
+    // - 매 부팅시 다른 비밀키를 제공해줌
     
     // JWT 생성
     public String create(String principle) {
