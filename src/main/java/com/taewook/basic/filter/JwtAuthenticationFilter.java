@@ -30,13 +30,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             // 1. request 객체에서 token 가져오기
             String token = parseBearerToken(request);
-            if(token == null) {
+            if (token == null) {
                 return;
             }
 
             // 2. token 검증
             String subject = jwtProvider.validation(token);
-            if(subject == null) {
+            if (subject == null) {
                 return;
             }
 
