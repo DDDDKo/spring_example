@@ -82,7 +82,7 @@ public class WebSecurityConfig {
             // 특정 URL 패턴에 대한 요청은 인증되지 사용자도 접근을 허용하는 방법
             .requestMatchers(HttpMethod.GET, "/auth/*").permitAll()
             // 특정 URL 패턴에 대한 요청은 지정한 권한을 가진 사용자만 접근을 허용하는 방법
-            .requestMatchers("/student/**").hasRole("STUDENT")
+            .requestMatchers("/student/", "/student/**").hasRole("STUDENT")
             // 인증된 사용자는 모두 접근을 허용하는 방법
             .anyRequest().authenticated()
         );
