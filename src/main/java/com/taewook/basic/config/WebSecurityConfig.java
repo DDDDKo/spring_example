@@ -96,11 +96,15 @@ public class WebSecurityConfig {
     @Bean
     protected CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
+        // 모든 메서드에 대해서 허용 get, post
         configuration.addAllowedMethod("*");
+        // 모든 출처에 대해서 허용
         configuration.addAllowedOrigin("*");
+        // 모든 헤더에 대해서 허용 헤더에 무슨 값이 오던 허용
         configuration.addAllowedHeader("*");
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        // 모든 url패턴에 대하여 허용
         source.registerCorsConfiguration("/**", configuration);
 
         return source;
