@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.taewook.basic.dto.Request.Student.PatchStudentRequestDto;
 import com.taewook.basic.dto.Request.Student.PostStudentRequestDto;
+import com.taewook.basic.dto.Request.Student.SignInRequestDto;
 import com.taewook.basic.service.StudentService;
 
 import jakarta.validation.Valid;
@@ -48,5 +49,12 @@ public class StudentController {
     ) {
         ResponseEntity<String> response = studentService.deleteStudent(studentNumber);
         return response;
+    }
+
+    @PostMapping("/sign-in")
+    public ResponseEntity<String> signIn (
+        @RequestBody @Valid SignInRequestDto requestBody
+    ) {
+        return studentService.signIn(requestBody);
     }
 }
